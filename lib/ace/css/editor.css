@@ -4,7 +4,7 @@ for (var i = 1; i < 16; i++) {
     styles.push(".ace_br" + i + "{" + (
         ["top-left", "top-right", "bottom-right", "bottom-left"]
     ).map(function(x, j) {
-        return i & (1<<j) ? "border-" + x + "-radius: 3px;" : "" 
+        return i & (1<<j) ? "border-" + x + "-radius: 3px;" : ""
     }).filter(Boolean).join(" ") + "}")
 }
 styles.join("\n")
@@ -193,7 +193,7 @@ styles.join("\n")
     opacity: 1;
 }
 .ace_composition_placeholder { color: transparent }
-.ace_composition_marker { 
+.ace_composition_marker {
     border-bottom: 1px solid;
     position: absolute;
     border-radius: 0;
@@ -258,7 +258,7 @@ styles.join("\n")
     contain: strict;
     will-change: transform;
 }
-.ace_hidpi .ace_text-layer > .ace_line, 
+.ace_hidpi .ace_text-layer > .ace_line,
 .ace_hidpi .ace_text-layer > .ace_line_group {
     contain: strict;
 }
@@ -266,6 +266,7 @@ styles.join("\n")
 .ace_cjk {
     display: inline-block;
     text-align: center;
+    background-color: #8a8a8a36;
 }
 
 .ace_emoji {
@@ -273,6 +274,7 @@ styles.join("\n")
     text-align: center;
     font-size: 50%;
     transform: translate(-12.5%, -12.5%);
+    background-color: #8a8a8a36;
 }
 
 .ace_cursor-layer {
@@ -325,7 +327,7 @@ styles.join("\n")
     animation-timing-function: ease-in-out;
     animation-name: blink-ace-animate-smooth;
 }
-    
+
 @keyframes blink-ace-animate {
     from, to { opacity: 1; }
     60% { opacity: 0; }
@@ -440,13 +442,13 @@ styles.join("\n")
     background-position: center;
 
     border-radius: 3px;
-    
+
     border: 1px solid transparent;
     cursor: pointer;
 }
 
 .ace_folding-enabled .ace_fold-widget {
-    display: inline-block;   
+    display: inline-block;
 }
 
 .ace_fold-widget.ace_end {
