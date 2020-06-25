@@ -272,7 +272,7 @@ styles.join("\n")
     display: inline-block;
     text-align: center;
     font-size: 50%;
-    transform: translate(-12.5%, -12.5%);
+    /* transform: translate(-12.5%, -12.5%); */
 }
 
 .ace_cursor-layer {
